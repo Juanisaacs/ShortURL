@@ -3,16 +3,16 @@
 </div>
 <div class="container mt-3">
     <h1 class="display-5 text-center">INGRESE LA URL A CORTAR</h1>
-    <div class="row mt-5 mb-4">
+    <div class="row mt-5 mb-3">
         <div class="col-lg-8">
             <input type="text" [(ngModel)]="nombreUrl" class="form-control form-control-lg" placeholder="Ingrese url a cortar ...">
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 ">
             <button (click)="procesarUrl()" class="btn btn-primary btn-block btn-lg">ACEPTAR</button>
         </div>
     </div>
     <div *ngIf='urlProcesada' class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 ">
             <input type="text" [(ngModel)]="urlShort" class="form-control form-control-lg" placeholder="Url procesada">
         </div>
     </div>
